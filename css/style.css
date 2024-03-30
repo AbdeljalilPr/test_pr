@@ -1,0 +1,696 @@
+/* Root Var */
+:root{
+
+}
+
+body{
+    background-color:white;
+    font-family: sans-serif,tahoma;
+    display: flex;
+
+}
+
+/* ------------.start header -------*/
+.main-content{
+    position: relative;
+    background: #424242;
+    width: 100%;
+    padding: 1rem;
+
+}
+.main-content .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 2rem;
+    background: #424242;
+    margin-bottom: 1rem;
+}
+
+.main-content .header .header-title{
+    color: rgb(250, 250, 252);
+}
+.main-content .header .user-info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.main-content .header .user-info .search-box{
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    margin-right: 4rem;
+    width: 400px;
+    gap: 5px;
+    background-color: #1b203d;
+    padding: 4px 12px;
+    
+}
+.main-content .header .user-info .search-box input{
+    background-color: trasparent;
+    background: #1b203d;
+    padding: 10px;
+    color: white;
+    width: 85%;
+    border: none;
+    font-size:15px ;
+}
+.main-content .header .user-info .search-box span{
+    color: gray;
+}
+
+.main-content .header .user {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.main-content .header .user img.not{
+    width: 2.5rem;
+    height:2.5rem;
+    border: 1px solid rgb(97, 92, 92);
+    border-radius: 10px;
+    color: gray;
+    display: flex;
+    align-items: center;
+    background-color: #1b203d;
+}
+
+.main-content .header .user .profile{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.main-content .header .user .profile span{
+    display: flex;
+    width: 1.5rem;
+    color:gray;
+    margin-top: 10px;
+
+}
+.main-content .header .user .profile h5{
+    display: flex;
+    color:rgb(224, 222, 222);
+    margin-top: 14px;
+    font-family: sans-serif;
+}
+
+.main-content .header .img{
+    width: 2.8rem;
+    height:2.8rem;
+    display: flex;
+    border: 1px solid rgb(97, 92, 92);
+    border-radius: 10px;
+    background-color: gray
+    }
+/* ------------.end header -------*/
+     
+/* ------------------start Sidebar-------------------------- */
+main{
+    display: grid;
+    grid-template-columns: 16rem auto 30rem;
+    gap: 2rem;
+    width: 96%;
+    margin: 1rem auto 4rem;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    height: 1125px;
+    position: sticky;
+    width: 300px;
+    overflow: hidden;
+    z-index: 1;
+    background-color: #1b203d;
+}
+.sidebar .logoIpsm{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+   
+}
+.sidebar .logoIpsm img{
+    width: 2.3rem;
+    height:4.3rem;
+    background-color: rgba(121, 117, 117, 0.055);
+    color: #fff;
+}
+
+.sidebar h2{
+ color: white;
+
+}
+.sidebar .links{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.2rem;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    
+}
+.sidebar a {
+    color: #818181;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    width: 160px;
+    padding: 5px 20px 5px 20px;
+}
+ .sidebar .links a span{
+    font-size: 1.7rem;
+    margin-right: 16px;
+    margin-top: 10px;
+}
+
+.sidebar .links a h4{
+    margin-top: 1rem;
+    
+}
+.sidebar .links .buttom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 24rem;
+}
+ .sidebar a:hover{
+    background-color:blue;
+    color: white;
+    border-radius: 10px;
+}
+
+/* end-------------------------end Sidebar---------------------------- */
+
+/*-------------------------------- start card container section--------------------- */
+/*------------------------------------start Trend-card----------------------------- */
+.card-container {
+    margin-top: 1rem;
+    display: flex;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.5rem;
+}
+
+.card-container .Trend-c{
+    border-radius: 6px;
+    height: 8rem;
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #1b203d;
+    justify-content: space-between;
+    padding: 1.6rem;
+    font-family: sans-serif;
+}
+
+.card-container .Trend-c .top{
+    display: flex;
+    justify-content:space-between;
+    
+    
+}
+.card-container .Trend-c .top .left{
+    display: flex;
+    gap: 0.5rem;
+    border-radius: 6px;
+    background-color:#26193c;
+}
+
+.card-container .Trend-c .top .left img{
+    width: 2.3rem;
+    height:2.3rem;
+    border-radius: 2px;
+    background-color:  rgba(207, 200, 200, 0.438);
+}
+
+.card-container .Trend-c .top .left h2{
+    font-weight: 200;
+    font-size: 1.4rem;
+    color: white;
+    padding-bottom: 2px;
+}
+.card-container .Trend-c .top .center{
+    line-height: 2px;
+    gap: 0.5rem;
+    color: white;
+    width: 200px;
+    margin-left: 12px;
+    margin-top: -10px;
+}
+
+.card-container .Trend-c .top .center small{
+    color: gray;
+}
+.card-container .Trend-c .top span{
+    display: flex;
+    width: 3.5rem;
+    margin-left: 90%;
+    color:rgb(24, 211, 24);
+}
+.card-container .Trend-c .top #last span{
+    display: flex;
+    width: 3.5rem;
+    margin-left: 90%;
+    color:darkorange
+}
+
+.card-container .Trend-c .middele{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.card-container  .Trend-c .middele .chip{
+    width: 4.5rem;
+    height: 4.5rem;
+}
+.card-container .Trend-c .bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: white;
+}
+.card-container  .Trend-c .bottom .right{
+    display: flex;
+    gap: 2rem;
+}
+
+.card-container .Trend-c .bottom .left{
+    color: rgb(26, 204, 26);
+    font-family: sans-serif;
+    margin-top: -1rem
+}
+/* --------------------------------end Trend card----------------------------*/
+/*-------------------------------- end card container section--------------------- */
+/*----------------------------- start flex section---------------------------- */
+.flex {
+    margin-top: 1rem;
+    display: flex;
+    width: 101%;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+
+
+/*---------------------------- start credit card-------------------------- */
+
+ .Credit-Card .cards{
+    border-radius: 6px;
+    height: 10rem;
+    display: flex;
+    width: 18rem;
+    flex-direction: column;
+    background: #5d70ff;
+    /* background: linear-gradient(#5d70ff,#5719c2);*/
+    justify-content: space-between;
+    padding: 1.6rem;
+    margin-top: 2rem;
+}
+ .Credit-Card .cards .top{
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-end;
+}
+ .Credit-Card .cards .top .left{
+    display: flex;
+    gap: 0.5rem;
+}
+ 
+ .Credit-Card .cards .top .left img{
+    border-radius: 2px;
+    background-color:transparent;
+    
+    
+}
+
+
+ .Credit-Card .cards .top .left h4{
+    color: #3a3939;
+}
+ .Credit-Card .cards .top .right{
+    display: flex;
+    width: 3.5rem;
+}
+
+.Credit-Card .cards .middele{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.Credit-Card .cards .middele h4{
+    font-family: sans-serif;
+    letter-spacing: 3px;
+}
+
+ .Credit-Card .cards .bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: white;
+}
+ .Credit-Card .cards .bottom .right{
+    width: 3.5rem;
+    height: 3.5rem;
+}
+.Credit-Card .cards .bottom .left{
+color: #3a3939;
+}
+/*-------------------------------- end credit card--------------------- */
+/*----------------------------start  My-portfolio -------------------*/
+
+.Portoflio_container{
+    margin-top: -16rem;
+    display: flex;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.5rem;
+}
+.My-portfolio{
+    border-radius: 6px;
+    height: 28rem;
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #1b203d;
+    justify-content: space-between;
+    padding: 1.6rem;
+}
+
+.My-portfolio .title h2{
+    color: white;
+}
+
+.My-portfolio .top{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;    
+    
+}
+.My-portfolio .top .left{
+    display: flex;
+    margin-top:13px;
+    border-radius: 6px;
+    background-color:#26193c;
+    align-items: flex-start;
+}
+
+.My-portfolio .top .left img{
+    width: 2.3rem;
+    height:42px;
+    background: aliceblue;
+    border-radius: 2px;
+    background-color: rgba(207, 200, 200, 0.438);
+}
+.My-portfolio .top .center{
+    color: white;
+    width: 200px;
+    margin-left: 1rem;
+    line-height: 8px;
+    padding-bottom: 5px;
+}
+
+.My-portfolio .top .center small{
+    color: gray;
+    font-weight: bold;
+    
+}
+.My-portfolio .top .center h4{
+    color: white;
+    font-weight: bold;
+}
+
+.My-portfolio .top .right{
+    direction: rtl;
+    line-height: 1px;
+    padding-bottom: 13px;
+}
+
+
+.My-portfolio .top .right small{
+    color: white;
+    font-weight: bold;
+}
+
+.My-portfolio .top .right h6{
+    color: rgb(221, 113, 25);
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+.My-portfolio .top .right .positive{
+    color: rgb(25, 221, 51);
+    font-family: sans-serif;
+    font-size: 13px;
+}
+/*-------------------------------- end portofolio------------------------------- */
+/*--------------------------------------start chart----------------------------- */
+
+.chart-card .chart{
+    border-radius: 6px;
+    height: 27rem;
+    display: flex;
+    width: 628px;
+    flex-direction: column;
+    background: #1b203d;;
+    justify-content: space-between;
+    padding: 1.6rem;
+    margin-top: 2rem;
+}
+.chart-card .chart .top{
+    display: flex;
+    justify-content:space-between;
+
+}
+.chart-card .chart .top .left{
+    display: flex;
+    margin-top: -1rem;
+}
+
+.chart-card .chart .top .left h2{
+    color: white;
+
+}
+.chart-card .chart .top .right{
+    display: flex;
+
+}
+
+.chart-card .chart .top .right {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+.chart-card .chart .top .right img{
+    width: 2.3rem;
+    height:1.9rem;
+    border: 1px solid rgb(97, 92, 92);
+    border-radius: 2px;
+    background-color: rgba(121, 117, 117, 0.055);
+}
+.chart-card .chart .top .right .select-box{
+display: flex;
+justify-content: space-between;
+height: 30px;
+width: 100px;
+border: 1px solid rgb(97, 92, 92);
+border-radius: 4px;
+    background-color: rgba(121, 117, 117, 0.055);
+}
+.chart-card .chart .top .right .select-box img{
+    width: 1.5rem;
+    height:1.5rem;
+    border: none;
+    background-color: rgba(121, 117, 117, 0.055);
+    align-items: center;
+    margin-top: 3px;
+    margin-left: 6px;
+}
+.chart-card .chart .top .right .select-box h4{
+color: gray;
+font-size: 10px;
+margin-top: 9px;
+}
+
+.chart-card .chart .top .right .select-box span{
+color: rgb(236, 233, 233);
+  margin-top: 8px;
+    margin-right: 8px;
+    font-size: small
+
+}
+    
+.chart-card .chart .medium{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 10px;
+}
+
+.chart-card .chart .medium .left{
+    display: flex;
+    flex-direction: column;
+}
+
+.chart-card .chart .medium .left h3{
+ color: white;
+}
+
+.chart-card .chart .medium .left .select{
+    display: flex;
+}
+
+.chart-card .chart .medium .left select{
+    border: none;
+    align-items: center;
+    background: transparent;
+    color: grey;
+}
+.chart-card .chart .medium .right .time{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 0.5rem;
+}
+
+.chart-card .chart .medium .right .time h5{
+    border: 1px solid rgb(97, 92, 92);
+    background: #1b203d;
+    border-radius: 10px;
+    padding: 2px 9px 2px 9px;
+    color: gray;
+    
+    gap: 1.5rem;
+}
+.chart-card .chart .bottom .left{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: -2rem;
+}
+
+.chart-card .chart .bottom .left .btc{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -13px;
+}
+
+.chart-card .chart .bottom .left .btc h4{
+    color: gray;
+   
+}
+
+.chart-card .chart .bottom .left .stock-market img{
+    display: flex;
+    width: 633px;
+    height: 304px;
+}
+
+.chart-card .chart .bottom .right{
+    display: flex;
+
+    margin-left: 5rem;
+    gap: 5.5rem;
+    margin-bottom: -2rem 
+}
+.chart-card .chart .bottom .right h4{
+    color: gray;
+    display: flex;
+
+}
+
+.chart-card .chart .bottom .right .stock-market{
+    display: flex;
+}
+
+/*----------------------------------end chart--------------------------*/
+
+/*-------------------------------- start live market--------------------- */
+
+.Last-div .Live-Market{
+    border-radius: 6px;
+    height: 11rem;
+    display: flex;
+    width: 628px;
+    flex-direction: column;
+    background: #1b203d;
+    justify-content: space-between;
+    padding: 1.6rem;
+    margin-top: 1rem;
+}
+.Last-div .Live-Market .top{
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-end;
+}
+.Last-div .Live-Market .top .left{
+    display: flex;
+    gap: 0.5rem;
+}
+.Last-div .Live-Market .top .left h3{
+    color: white;
+
+} 
+.Last-div .Live-Market .top .right{
+    margin-bottom: 1rem;
+}
+.Last-div .Live-Market .top .right button{
+    border: none;
+    background-color: transparent;
+    border: #3a3939 solid 1px;
+    color: gray;
+    padding: 8px;
+    border-radius: 4px;
+    
+}
+ 
+.Last-div .Live-Market .middele{
+    display: flex;
+
+}
+.Last-div .Live-Market .middele small{
+    color: gray
+}
+
+.Last-div .Live-Market .middele .right{
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    align-items: flex-start;
+    margin-left: 8rem;
+}
+
+.Last-div .Live-Market .bottom{
+    display: flex;
+    align-items: flex-end;
+    
+}
+.Last-div .Live-Market .bottom .left{
+    display: flex;
+}
+
+.Last-div .Live-Market .bottom .left img{
+    display: flex;
+    width: 2.3rem;
+    height: 37px;
+    margin-top: -10px;
+    margin-right: 7px
+}
+
+.Last-div .Live-Market .bottom .left small{
+    display: flex;
+    color: #fff;
+    
+}
+.Last-div .Live-Market .bottom .right{
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    align-items: flex-start;
+    margin-left: 4rem;
+    margin-bottom: 13px
+}
+.Last-div .Live-Market .bottom small{
+    color: #fff
+}
+/*-------------------------------- end live market--------------------- */
+/*------------------------------------- end flex section------------------------------------*/
